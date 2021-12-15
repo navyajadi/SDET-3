@@ -3,11 +3,18 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.vTiger.Practice.NewDataProvider">
+      <class name="com.vTiger.TCbase.TC001_CreateOrgBaseTest">
         <methods>
-          <include name="print"/>
+          <include name="logOutfromAppp"/>
+          <include name="setUp"/>
+          <include name="LaunchBrower_URL"/>
+          <include name="createOrgPhoneNumner"/>
+          <include name="closeBrowser"/>
+          <include name="logintoApp"/>
+          <include name="createOrg"/>
+          <include name="disconnectedfromDB"/>
         </methods>
-      </class> <!-- com.vTiger.Practice.NewDataProvider -->
+      </class> <!-- com.vTiger.TCbase.TC001_CreateOrgBaseTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
