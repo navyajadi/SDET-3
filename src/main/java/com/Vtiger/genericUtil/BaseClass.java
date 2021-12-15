@@ -31,11 +31,11 @@ public class BaseClass {
 		System.out.println("Connect with data base");
 	}
 
-	@Parameters("BROWSER")
+	//@Parameters("BROWSER")
 
 	@BeforeClass(groups = { "smoketesting", "regressiontesting" })
-	public void LaunchBrower_URL(String browser) throws IOException {
-		//String browser = FileUtil.objforFileUtil().readDataFrompropFile("browser");
+	public void LaunchBrower_URL() throws IOException {
+		String browser = FileUtil.objforFileUtil().readDataFrompropFile("browser");
 
 		if (browser.equalsIgnoreCase("chrome")) {
 			driver = new ChromeDriver();

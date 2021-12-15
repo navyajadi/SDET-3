@@ -10,6 +10,7 @@ import com.Vtiger.genericUtil.BaseClass;
 import com.Vtiger.genericUtil.JavaUtil;
 
 public class TC001_CreateOrgBaseTest extends BaseClass {
+	
 	@Test(groups = "smoketesting", retryAnalyzer = com.Vtiger.genericUtil.RetryAnalyzer.class)
 
 	public void createOrg() throws InterruptedException {
@@ -63,6 +64,7 @@ public class TC001_CreateOrgBaseTest extends BaseClass {
 		Ocp.OrgCreateContact(organiname);
 		Ocp.PhoneNo(phnmber);
 		Ocp.getSavecontactbtn();
+		
 
 		OIP.getCreateorgnsimg().click();
 		OIP.searchForOrg(organiname, "Organization Name");
@@ -79,5 +81,7 @@ public class TC001_CreateOrgBaseTest extends BaseClass {
 			e.printStackTrace();
 			System.out.println("fail");
 		}
+		
+		
 	}
 }
