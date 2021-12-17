@@ -36,11 +36,11 @@ public class BaseClass {
 	@BeforeClass(groups = { "smoketesting", "regressiontesting" })
 	public void LaunchBrower_URL() throws IOException {
 		
-		//String browser=System.getProperty("BROWSER");
+		String browser=System.getProperty("BROWSER");
 		
-		//System.out.println(browser);
+		System.out.println(browser);
 		
-		String browser = FileUtil.objforFileUtil().readDataFrompropFile("browser");
+		//String browser = FileUtil.objforFileUtil().readDataFrompropFile("browser");
 
 		if (browser.equalsIgnoreCase("chrome")) {
 			driver = new ChromeDriver();
