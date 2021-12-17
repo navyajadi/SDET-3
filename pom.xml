@@ -91,7 +91,7 @@
 						<version>3.0.0-M5</version>
 						<configuration>
 							<suiteXmlFiles>
-								<suiteXmlFile>testngGrouping.xml</suiteXmlFile>
+								<suiteXmlFile>testngSmokeTesting.xml</suiteXmlFile>
 							</suiteXmlFiles>
 						</configuration>
 					</plugin>
@@ -129,7 +129,7 @@
 						<version>3.0.0-M5</version>
 						<configuration>
 							<suiteXmlFiles>
-								<suiteXmlFile>testngParallelExecution.xml</suiteXmlFile>
+								<suiteXmlFile>testngRegression.xml</suiteXmlFile>
 							</suiteXmlFiles>
 						</configuration>
 					</plugin>
